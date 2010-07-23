@@ -265,3 +265,15 @@ th.desc a {
     background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
     padding-left: 28px;
 }
+
+.product { border: solid 2px #666; margin: 1em 2em; padding: 1em; }
+.product .price { float: left; display: block; font-weight: bold; font-size: 150%; margin: .5em }
+.product .image { float: left; display: block; vertical-align: middle; text-align: center; }
+.product .description { float: left; }
+.product .colors { clear: both; padding: 1em 1em 0 1em; font-weight: bold; }
+.product .colors .color { margin: 0 0 0 1em; }
+.product .colors .color.yellow { color: #FCE128 }
+.product .colors .color.red { color: #E22E13 }
+.product .colors .color.green { color: #6CF426 }
+.product .colors .color.blue { color: #1327F9 }
+
