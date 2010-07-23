@@ -7,15 +7,13 @@
     </h3>
   </g:link>
   
-  
+  <div class="image">
+  	<img src="${resource(dir:'images/product',file: productImage)}" />
+  </div>
   
   <span class="price">
 	  ${formatNumber(number:productInstance.price,format:"\$###,##0")}
   </span>
-  
-  <div class="image">
-  	<img src="${resource(dir:'images/product',file: productImage)}" />
-  </div>
   
   <div class="description">
 	  ${productInstance.description}

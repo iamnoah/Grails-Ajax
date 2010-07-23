@@ -1,5 +1,5 @@
 (function() {
-	window.grailsAjax = {
+	var grailsAjax = window.grailsAjax = {
 		refresh: function(target,params,cb) {
 			var component = $(target).parents('.ajax-component:first');
 			
@@ -7,7 +7,7 @@
 			
 			// limitation: assume default mapping scheme - a more robust 
 			// solution would register the values of reverse URL mappings
-			var path = '/'+component.attr('id').replace('-','/');
+			var path = '../'+component.attr('id').replace(/-/g,'/');
 			
 			component.load(path,params,cb);
 		}
